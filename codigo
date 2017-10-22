@@ -1,2 +1,20 @@
-class productos{
-var tacos: String
+ class productos{
+	 var tacos: String
+	 var bebidas : String
+	 init (tacos: String, bebidas:String){
+		 self.tacos = tacos
+		 self.bebidas = bebidas
+	 }
+ }
+
+class tacos : productos{
+	enum TipoDeTaco{
+		case: pastor,campechanos,suadero,cabeza, tripa
+	}
+}
+
+class bebidas: productos{
+	enum TipoDebebida{
+		case: cerveza, coca, agua
+	}
+}
